@@ -18,7 +18,7 @@ An IP address is the numerical identifier of a device on the internet while a do
 
 
 ## 6. How does the operating system use ports?
-An operating system 
+An operating system uses ports to divide up the data arriving from the network based on the destination process. There is also a relationship between ports and applications. 
 
 
 ## 7. Write code that creates a socket connection to ip address 123.45.678.900 at port 4040. Then, print a color to that socket’s output.
@@ -26,14 +26,15 @@ An operating system
 
 
 ## 8. What is the difference between a socket’s input stream and its output stream?
-
+A socket's input stream reads data from the source, while output stram writes data. 
 
 
 ## 9. What is the difference between a Socket and a SocketServer?
-
+The socket is connected to the server at an ipaddress or host and port-- a single connection. A server socket can accept more connections from other client sockets. 
 
 
 ## 10. How are threads useful with servers? How does a server manage to always be listening for sockets trying to connect?
-
+Threads are useful because they allow for a singular server/core to execute multiple processes simultaneously. 
+because a threaded socket starts a new thread for each threads so that the main thread can continue to listen to incoming connections 
 
 
