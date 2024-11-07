@@ -22,7 +22,14 @@ An operating system uses ports to divide up the data arriving from the network b
 
 
 ## 7. Write code that creates a socket connection to ip address 123.45.678.900 at port 4040. Then, print a color to that socket’s output.
-
+```
+Socket sock = null;
+sock = new Socket("123.45.678.900", 4040);
+PrintWriter pw = new PrintWriter(sock.getOutputStream());
+pw.println("blue");
+pw.close();
+sock.close();
+```
 
 
 ## 8. What is the difference between a socket’s input stream and its output stream?
